@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors ✊🖐✌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: radial-gradient(circle at center, #111, #000);
+            color: #00f7ff;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #00ffe0;
+            text-shadow: 0 0 10px #00ffe0;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        img {
+            border: 5px solid #00ffe0;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #00ffe0;
+            width: 720px;
+            max-width: 95vw;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #999;
+        }
+
+        .glow-text {
+            color: #0ff;
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 Rock-Paper-Scissors with Hand Gestures</h1>
+
+    <div class="video-container">
+        <img src="{{ url_for('video') }}" alt="Live Hand Gesture Feed">
+    </div>
+
+    <div class="footer">
+        <p class="glow-text">Best of 5 | Use your hand in the box on screen</p>
+        <p>Made with ❤️ using Flask & OpenCV</p>
+    </div>
+</body>
+</html>
